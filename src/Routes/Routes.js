@@ -1,5 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
+import CoursesLayout from "../Layout/CoursesLayout";
 import Main from "../Layout/Main";
+import CheckOut from "../Pages/CheckOut/CheckOut";
+import CourseDetails from "../Pages/CourseDetails/CourseDetails";
 import Courses from "../Pages/Courses/Courses";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
@@ -21,7 +24,21 @@ const routes = createBrowserRouter([
       },
       {
         path:'/courses',
-        element: <PrivateRoute><Courses/></PrivateRoute>
+        element: <PrivateRoute><CoursesLayout/></PrivateRoute>,
+        children:[
+          {
+            path:'/courses',
+            element: <Courses/>
+          },
+          {
+            path:'/courses/details/:courseId',
+            element: <CourseDetails/>
+          },
+          {
+            path:'/courses/checkout/:courseId',
+            element: <CheckOut/>
+          },
+        ]
       },
       {
         path:'/register',

@@ -9,69 +9,69 @@ import { FaSmile } from "@react-icons/all-files/fa/FaSmile";
 const Explore = () => {
     const data = [
         {
-            id: "01",
-            name: "Data Science",
-            slogan:'Data is Everything',
-            icon:<FaDatabase className='text-5xl'/>
+            "id": "01",
+            "name": "Data Science",
+            "slogan":"Data is Everything",
+            "icon":<FaDatabase className='text-5xl'/>
         },
         {
-            id: "02",
-            name: "Business",
-            slogan:'Improve your business',
+            "id": "02",
+            "name": "Business",
+            "slogan":'Improve your business',
 
-            icon: <FaBusinessTime className='text-5xl'/>
+            "icon": <FaBusinessTime className='text-5xl'/>
         },
         {
-            id: "03",
-            name: "Art & Design",
-            slogan:'Fun & Challenging',
+            "id": "03",
+            "name": "Art & Design",
+            "slogan":'Fun & Challenging',
 
-            icon: <FaArtstation className='text-5xl'/>
+            "icon": <FaArtstation className='text-5xl'/>
         },
         {
-            id: "04",
-            name: "Lifestyle",
-            slogan:'New Skills, New You',
+            "id": "04",
+            "name": "Lifestyle",
+            "slogan":'New Skills, New You',
 
-            icon: <FaSmile className='text-5xl'/>
+            "icon": <FaSmile className='text-5xl'/>
         },
         {
-            id: "05",
-            name: "Marketing",
-            slogan:'Improve your business',
+            "id": "05",
+            "name": "Marketing",
+            "slogan":'Improve your business',
 
-            icon: <FaBusinessTime className='text-5xl'/>
+            "icon": <FaBusinessTime className='text-5xl'/>
         },
         {
-            id: "06",
-            name: 'Finance',
-            slogan:'Fun & Challenging',
+            "id": "06",
+            "name": 'Finance',
+            "slogan":'Fun & Challenging',
 
-            icon: <FaBusinessTime className='text-5xl'/>
+            "icon": <FaBusinessTime className='text-5xl'/>
         }
         ,
         {
-            id: "07",
-            name: 'Health & Fitness',
-            slogan:'Invest to Your Body',
+            "id": "07",
+            "name": 'Health & Fitness',
+            "slogan":'Invest to Your Body',
 
-            icon: <FaBusinessTime className='text-5xl'/>
+            "icon": <FaBusinessTime className='text-5xl'/>
         }
         ,
         {
-            id: "08",
-            name: 'Music',
-            slogan:'Major or Minor',
+            "id": "08",
+            "name": 'Music',
+            "slogan":'Major or Minor',
 
-            icon: <FaBusinessTime className='text-5xl'/>
+            "icon": <FaBusinessTime className='text-5xl'/>
         }
         ,
         {
-            id: "09",
-            name: 'Academics',
-            slogan:'High Education Level',
+            "id": "09",
+            "name": 'Academics',
+            "slogan":'High Education Level',
 
-            icon: <FaBusinessTime className='text-5xl'/>
+            "icon": <FaBusinessTime className='text-5xl'/>
         }
     ]
   return (

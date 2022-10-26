@@ -6,7 +6,7 @@ const Navigation = () => {
   const { user, logOut } = useAuth();
   // console.log(user.providerData[0].photoURL);
   return (
-    <div className="bg-violet-700 text-white">
+    <div className="bg-violet-700 text-white sticky top-0 z-50">
       <div className="navbar container mx-auto">
         <div className="flex-1">
           <Link to="/" className="btn btn-ghost normal-case text-4xl">
