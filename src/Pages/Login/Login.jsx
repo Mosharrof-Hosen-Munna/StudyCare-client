@@ -25,7 +25,6 @@ const Login = () => {
   };
   const handleEmailLogin = (e) => {
     setLoading(true);
-    console.log("fasdfas");
     e.preventDefault();
     handleEmailPasswordLogin(loginData?.email, loginData?.password)
       .then((result) => {
