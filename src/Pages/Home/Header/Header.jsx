@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import headerImg from "../../../images/header.jpg";
 
 const Header = () => {
@@ -18,9 +19,11 @@ const Header = () => {
                 Meet university,and cultural institutions, who'll share their
                 experience.
               </p>
+              <Link to={`/courses`}>
               <button className="btn btn-primary btn-lg">
                 View All Courses
               </button>
+              </Link>
             </div>
           </div>
           <div className="mx-auto text-center">

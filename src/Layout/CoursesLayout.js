@@ -78,7 +78,7 @@ const CoursesLayout = () => {
 <div className='flex'>
    <div className='w-1/3 px-4'>
       <nav>
-        <h1 className='text-2xl font-semibold mb-4'>Category List</h1>
+        <h1 className='text-2xl font-semibold mb-4 text-primary'>Category List</h1>
         <ul className=''>
           {data.map((category)=><li className='my-1 '><NavLink
             to={`/courses/details/${category.id}`}
@@ -92,7 +92,7 @@ const CoursesLayout = () => {
         </ul>
       </nav>
       <div>
-      <h1 className='text-2xl font-semibold mb-4 mt-12'>Opening Hours</h1>
+      <h1 className='text-2xl font-semibold mb-4 mt-12 text-primary'>Opening Hours</h1>
       <div className='flex justify-between items-center'>
         <div>
         Mon - Tues :

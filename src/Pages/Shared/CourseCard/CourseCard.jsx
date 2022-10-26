@@ -1,6 +1,7 @@
 import React from "react";
 import { FaBusinessTime } from "@react-icons/all-files/fa/FaBusinessTime";
 import { FaArrowRight } from "@react-icons/all-files/fa/FaArrowRight";
+import { Link } from "react-router-dom";
 
 
 const CourseCard = () => {
@@ -32,7 +33,8 @@ const CourseCard = () => {
         <hr />
         <div className="flex justify-between font-semibold text-lg mt-4">
        <div className="text-xl font-bold text-primary"> $32.00</div>
-       <div className="flex items-center">Know Details <FaArrowRight className="ml-4"/></div>
+      <Link to={`/courses/details/01`}>
+      <div className="flex items-center">Know Details <FaArrowRight className="ml-4"/></div></Link>
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import { FaDatabase } from "@react-icons/all-files/fa/FaDatabase";
 import { FaBusinessTime } from "@react-icons/all-files/fa/FaBusinessTime";
 import { FaArtstation } from "@react-icons/all-files/fa/FaArtstation.esm";
 import { FaSmile } from "@react-icons/all-files/fa/FaSmile";
+import { Link } from "react-router-dom";
 
 
 const Explore = () => {
@@ -82,7 +83,7 @@ const Explore = () => {
            <span className="text-primary mb-4 inline-block"> Explore</span> <br />
             Our Popular Courses
           </h1>
-          <div className="text-lg font-semibold cursor-pointer hover:text-primary duration-300">View all Category</div>
+          <Link to={`/courses`}><div className="text-lg font-semibold cursor-pointer hover:text-primary duration-300">View all Category</div></Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
         {
