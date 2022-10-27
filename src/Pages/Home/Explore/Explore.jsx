@@ -23,70 +23,23 @@ const Explore = () => {
   ];
 
   useEffect(() => {
-    fetch("http://localhost:5000/category")
+    fetch("https://educational-server-mosharrof-hosen-munna.vercel.app/category")
       .then((res) => res.json())
       .then((data) => setCategories(data));
   }, []);
-  console.log(categories);
 
-  const data = [
-    {
-      id: "01",
-      name: "Data Science",
-      slogan: "Data is Everything",
-    },
-    {
-      id: "02",
-      name: "Business",
-      slogan: "Improve your business",
-    },
-    {
-      id: "03",
-      name: "Art & Design",
-      slogan: "Fun & Challenging",
-    },
-    {
-      id: "04",
-      name: "Lifestyle",
-      slogan: "New Skills, New You",
-    },
-    {
-      id: "05",
-      name: "Marketing",
-      slogan: "Improve your business",
-    },
-    {
-      id: "06",
-      name: "Finance",
-      slogan: "Fun & Challenging",
-    },
-    {
-      id: "07",
-      name: "Health & Fitness",
-      slogan: "Invest to Your Body",
-    },
-    {
-      id: "08",
-      name: "Music",
-      slogan: "Major or Minor",
-    },
-    {
-      id: "09",
-      name: "Academics",
-      slogan: "High Education Level",
-    },
-  ];
+  
   return (
     <section className="py-24 px-4">
       <div className="container mx-auto">
         <div className="flex justify-between items-center mb-12">
-          <h1 className="text-5xl font-bold">
+          <h1 className="md:text-5xl text-2xl font-bold">
             <span className="text-primary mb-4 inline-block"> Explore</span>{" "}
             <br />
             Our Popular Courses
           </h1>
           <Link to={`/courses`}>
-            <div className="text-lg font-semibold cursor-pointer hover:text-primary duration-300">
+            <div className="md:text-lg text-md font-semibold cursor-pointer hover:text-primary duration-300">
               View all Category
             </div>
           </Link>

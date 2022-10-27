@@ -38,8 +38,8 @@ import {
       return signInWithEmailAndPassword(auth, email, password);
     };
   
-    const setUserName = (name) => {
-      updateProfile(auth.currentUser, { displayName: name }).then((result) => {});
+    const setUserName = (name,photoURL) => {
+      updateProfile(auth.currentUser, { displayName: name,photoURL }).then((result) => {});
     };
   
     const logOut = () => {

@@ -5,13 +5,12 @@ import { Link } from "react-router-dom";
 
 
 const CourseCard = ({course}) => {
-  const {} = course
   return (
     <div className="rounded-lg bg-white shadow-xl shadow-slate-200">
       <div>
         <img
         
-        className="rounded-t-lg w-full"
+        className="rounded-t-lg w-full max-h-64"
           src={course.img}
           alt=""
         />

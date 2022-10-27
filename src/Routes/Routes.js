@@ -42,11 +42,17 @@ const routes = createBrowserRouter([
           },
           {
             path:'/courses/details/:courseId',
-            element: <CourseDetails/>
+            element: <CourseDetails/>,
+            loader: async({params})=>{
+              return fetch(`https://educational-server-mosharrof-hosen-munna.vercel.app/courses/${params.courseId}`)
+            }
           },
           {
             path:'/courses/checkout/:courseId',
-            element: <PrivateRoute><CheckOut/></PrivateRoute>
+            element: <PrivateRoute><CheckOut/></PrivateRoute>,
+            loader: async({params})=>{
+              return fetch(`https://educational-server-mosharrof-hosen-munna.vercel.app/courses/${params.courseId}`)
+            }
           },
         ]
       },

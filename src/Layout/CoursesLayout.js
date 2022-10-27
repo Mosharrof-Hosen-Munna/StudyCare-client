@@ -75,8 +75,8 @@ const CoursesLayout = () => {
         <CourseHeader/>
 
 <div className="container mx-auto py-20 px-4">
-<div className='flex'>
-   <div className='w-1/3 px-4'>
+<div className='md:flex'>
+   <div className='md:w-1/3 px-4'>
       <nav>
         <h1 className='text-2xl font-semibold mb-4 text-primary'>Category List</h1>
         <ul className=''>
@@ -133,7 +133,7 @@ const CoursesLayout = () => {
       <hr className='my-2'/>
       </div>
    </div>
-   <div className='w-full ml-8'><Outlet/></div>
+   <div className='md:w-full md:ml-8 mt-8 md:mt-0'><Outlet/></div>
 </div>
 </div>
     </div>
