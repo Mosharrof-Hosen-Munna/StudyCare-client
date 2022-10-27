@@ -51,7 +51,8 @@ const CheckOut = () => {
       <h1 className="text-3xl text-primary font-semibold mb-4">
         Checkout! Proceed to your Payment
       </h1>
-      <div className="card  bg-white">
+      
+      <div className="card  bg-white p-4">
         <div className="flex">
           <img className="w-full md:w-2/4" src={course.img} alt="" />
           <div className="ml-4 p-4">
@@ -89,9 +90,10 @@ const CheckOut = () => {
           </div>
         </div>
         <div className="p-4 w-full md:w-3/4 mx-auto">
-          <h2 className="text-3xl text-primary my-4 text-center font-semibold">
+          <h2 className="text-3xl text-primary mt-4 text-center font-semibold">
             Payment Details
           </h2>
+          <p className="text-lg text-center mb-4">Complete your purchase by providing your payment details</p>
           <div className="form-control my-2">
             <label className="label">
               <span className="label-text">Name</span>
@@ -121,7 +123,7 @@ const CheckOut = () => {
               <span className="label-text">Phone Number</span>
             </label>
             <input
-              type="number"
+              type="tel"
               placeholder="Your Phone Number"
               className="input input-bordered"
             />

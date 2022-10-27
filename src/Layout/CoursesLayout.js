@@ -84,7 +84,7 @@ const CoursesLayout = () => {
             <NavLink
             to={`/courses/details/${category.id}`}
             className={({ isActive }) =>
-              isActive ? 'border-red-400 border-l-8 text-white bg-primary p-4 my-1 inline-block w-full bg-white cursor-pointer shadow-sm    font-semibold text-lg' : 'p-4 my-1 inline-block w-full bg-white cursor-pointer shadow-sm hover:bg-primary hover:border-l-8 border-red-400 hover:text-white duration-300 font-semibold text-lg'
+              isActive ? 'border-red-400 border-l-8 text-white bg-primary p-4 my-1 inline-block w-full  cursor-pointer shadow-sm    font-semibold text-lg' : 'p-4 my-1 inline-block w-full bg-white cursor-pointer shadow-sm hover:bg-primary hover:border-l-8 border-red-400 hover:text-white duration-300 font-semibold text-lg'
             }
           >
             {category.name}
