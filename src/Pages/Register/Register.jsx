@@ -30,6 +30,7 @@ const Register = () => {
     setRegisterData(newRegisterData);
   };
 
+  // validate registration data
   const validationRegister = (name, password) => {
     const errorMessage = {};
     if (name.length < 5 || name.length > 15) {
@@ -41,6 +42,7 @@ const Register = () => {
     return errorMessage;
   };
 
+  // handle email registration function
   const handleEmailRegistration = (e) => {
     setLoading(true);
     e.preventDefault();
@@ -54,13 +56,14 @@ const Register = () => {
       setError(errorMessage);
       return;
     }
+
     handleEmailPasswordRegister(
       registerData?.email,
       registerData?.password,
       registerData?.name
     )
       .then((result) => {
-        setUserName(registerData?.name);
+        setUserName(registerData?.name,registerData?.photoURL);
         const LoginUser = result.user;
         setUser(LoginUser);
         // emailVerification();
@@ -74,6 +77,7 @@ const Register = () => {
       .finally(() => setLoading(false));
   };
 
+  // google signup
   const signInGoogle = () => {
     setLoading(true);
     handleGoogleSignIn()
@@ -84,6 +88,7 @@ const Register = () => {
       .finally(() => setLoading(false));
   };
 
+  // github signup
   const signInGithub = () => {
     setLoading(true);
     handleGithubSignIn()
@@ -119,8 +124,23 @@ const Register = () => {
                     type="text"
                     placeholder="name"
                     className="input input-bordered"
+                    required
                   />
                   <div style={{color: 'red'}} className=" text-sm mt-1">{error.name&&error.name}</div>
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Your Photo Url</span>
+                  </label>
+                  <input
+                    name="photoURL"
+                    onChange={handleOnChange}
+                    type="text"
+                    placeholder="Paste your photo url"
+                    className="input input-bordered"
+                    required
+                  />
+                 
                 </div>
                 <div className="form-control">
                   <label className="label">
@@ -132,6 +152,7 @@ const Register = () => {
                     type="email"
                     placeholder="email"
                     className="input input-bordered"
+                    required
                   />
                   <div style={{color: 'red'}} className=" text-sm mt-1">{error.email&&error.email}</div>
                 </div>
@@ -145,6 +166,7 @@ const Register = () => {
                     onChange={handleOnChange}
                     placeholder="password"
                     className="input input-bordered"
+                    required
                   />
                   <div style={{color: 'red'}} className=" text-sm mt-1">{error.password && error.password}</div>
                 </div>

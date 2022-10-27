@@ -9,7 +9,6 @@ const CourseCard = ({course}) => {
     <div className="rounded-lg bg-white shadow-xl shadow-slate-200">
       <div>
         <img
-        
         className="rounded-t-lg w-full max-h-64"
           src={course.img}
           alt=""
@@ -18,11 +17,13 @@ const CourseCard = ({course}) => {
       <div className="p-8">
         <div className="flex justify-between text-lg">
           <div className="flex items-center">
-            <FaBusinessTime  className="mr-2"/> 43 Lesson
+            <FaBusinessTime  className="mr-2"/> {Math.floor(Math.random() *100)} Lesson
           </div>
           <div>{course.rating.number} ({course.rating.total})</div>
         </div>
-        <div className="text-xl font-semibold my-3">{course.name}</div>
+        <Link to={`/courses/details/${course._id}`}>
+        <div className="text-xl cursor-pointer hover:text-primary duration-300 font-semibold my-3">{course.name}</div>
+        </Link>
         <div className="flex items-center my-6">
           <div className="avatar">
             <div className="w-12 mask mask-hexagon">
@@ -35,7 +36,7 @@ const CourseCard = ({course}) => {
         <div className="flex justify-between font-semibold text-lg mt-4 mb-auto">
        <div className="text-xl font-bold text-primary"> {course.price}</div>
       <Link to={`/courses/details/${course._id}`}>
-      <div className="flex items-center">Know Details <FaArrowRight className="ml-4"/></div></Link>
+      <div className="flex items-center hover:text-primary duration-300">Know Details <FaArrowRight className="ml-4"/></div></Link>
         </div>
       </div>
     </div>

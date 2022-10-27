@@ -10,7 +10,7 @@ const CommentCard = ({ comment }) => {
           <img src={comment.profile} />
         </div>
       </div>
-      <div className="ml-8">
+      <div className="ml-8 w-full">
         <div className="flex items-center justify-between">
           <div className="mb-4">
             <h3 className="text-lg font-bold">{comment.name}</h3>
