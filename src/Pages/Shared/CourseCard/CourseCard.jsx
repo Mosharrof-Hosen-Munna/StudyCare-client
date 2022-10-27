@@ -4,13 +4,15 @@ import { FaArrowRight } from "@react-icons/all-files/fa/FaArrowRight";
 import { Link } from "react-router-dom";
 
 
-const CourseCard = () => {
+const CourseCard = ({course}) => {
+  const {} = course
   return (
     <div className="rounded-lg bg-white shadow-xl shadow-slate-200">
       <div>
         <img
-        className="rounded-t-lg"
-          src="https://educal-react.vercel.app/assets/img/course/course-3.jpg"
+        
+        className="rounded-t-lg w-full"
+          src={course.img}
           alt=""
         />
       </div>
@@ -19,21 +21,21 @@ const CourseCard = () => {
           <div className="flex items-center">
             <FaBusinessTime  className="mr-2"/> 43 Lesson
           </div>
-          <div>3.5 (55)</div>
+          <div>{course.rating.number} ({course.rating.total})</div>
         </div>
-        <div className="text-xl font-semibold my-3">Become a product Manager learn the skills & job.</div>
+        <div className="text-xl font-semibold my-3">{course.name}</div>
         <div className="flex items-center my-6">
           <div className="avatar">
             <div className="w-12 mask mask-hexagon">
-              <img src="https://placeimg.com/192/192/people" />
+              <img src={course.instructor.profile} />
             </div>
           </div>
-          <h5 className="text-lg ml-4">Jim Séchen</h5>
+          <h5 className="text-lg ml-4">{course.instructor.name}</h5>
         </div>
         <hr />
-        <div className="flex justify-between font-semibold text-lg mt-4">
-       <div className="text-xl font-bold text-primary"> $32.00</div>
-      <Link to={`/courses/details/01`}>
+        <div className="flex justify-between font-semibold text-lg mt-4 mb-auto">
+       <div className="text-xl font-bold text-primary"> {course.price}</div>
+      <Link to={`/courses/details/${course._id}`}>
       <div className="flex items-center">Know Details <FaArrowRight className="ml-4"/></div></Link>
         </div>
       </div>

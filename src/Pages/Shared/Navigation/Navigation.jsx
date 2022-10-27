@@ -27,6 +27,9 @@ const Navigation = () => {
               <Link to="/blog">Blog</Link>
             </li>
             <li>
+              <Link to="/faq">FAQ</Link>
+            </li>
+            <li>
               <div className="form-control">
                 <label className="label cursor-pointer">
                   <span className="label-text text-white text-lg mr-2">Dark Mode</span>

@@ -1,7 +1,18 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import CourseCard from "../../Shared/CourseCard/CourseCard";
 
 const FindCourses = () => {
+
+  const [courses,setCourses] = useState([])
+
+  useEffect(()=>{
+    fetch('http://localhost:5000/courses')
+    .then(res=>res.json())
+    .then(data=>setCourses(data))
+  },[])
+
   return (
     <div className="py-24 px-4 bg-slate-100">
       <div className="container mx-auto">
@@ -24,12 +35,10 @@ const FindCourses = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <CourseCard/>
-            <CourseCard/>
-            <CourseCard/>
-            <CourseCard/>
-            <CourseCard/>
-            <CourseCard/>
+           {courses.map(course=>{
+            return  <CourseCard course={course}/>
+           })}
+            
         </div>
       </div>
     </div>
