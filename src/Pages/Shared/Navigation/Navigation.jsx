@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
-import { FaBusinessTime } from "@react-icons/all-files/fa/F";
+import { FaBattleNet } from "react-icons/fa";
 
 const Navigation = () => {
   const [check,setCheck] = useState(false)
@@ -11,8 +11,8 @@ const Navigation = () => {
     <div className="bg-violet-700 text-white sticky top-0 z-50">
       <div className="navbar container mx-auto">
         <div className="flex-1">
-          <Link to="/" className="btn btn-ghost normal-case text-4xl">
-            STUDY <span className="text-rose-600">CARE</span>
+          <Link to="/" className="btn btn-ghost normal-case text-4xl flex items-center">
+        <span className="mr-4"><FaBattleNet/></span>    STUDY <span className="text-rose-600">CARE</span>
           </Link>
         </div>
         <div className="flex-none">

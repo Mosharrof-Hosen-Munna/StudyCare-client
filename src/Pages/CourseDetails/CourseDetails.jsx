@@ -91,7 +91,7 @@ const CourseDetails = () => {
       ],
     },
     {
-      _id: "0282e0e58a5c404fbd1asdfasdfhsde",
+      _id: "0282e0e58a5asdfac404fbd1asdfasdfhsde",
       name: "Creative writing through Storytelling",
       category_id: "03",
       category_name: "Art & Design",
@@ -112,6 +112,258 @@ const CourseDetails = () => {
         profile: "https://placeimg.com/192/192/people",
         update: "October 08, 2020",
         star: "4.1",
+      },
+      reviews: [
+        {
+          name: "Eleanor Fant",
+          profile: "https://placeimg.com/192/192/people",
+          comment:
+            "So I said lurgy dropped a clanger Jeffrey bugger cuppa gosh David blatant have it, standard A bit of how's your father my lady absolutely.",
+          date: "July 14, 2022",
+          rating: "4",
+        },
+        {
+          name: "Shahnewaz Sakil",
+          profile: "https://placeimg.com/192/192/people",
+          comment:
+            "David blatant have it, standard A bit of how's your father my lady absolutely.",
+          date: "July 14, 2022",
+          rating: "4",
+        },
+      ],
+    },
+    {
+      _id: "0282ehsdfhujsdesdfasdfhsde",
+      name: "Creative Thingking about lifestyle",
+      category_id: "04",
+      category_name: "Lifestyle",
+      rating: {
+        number: 4.7,
+        badge: "Good",
+        total: "450",
+      },
+
+      price: "$85",
+      total_view: 300,
+      published_date: "2021-07-22 17:27:34",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtMz-TXof73PLOzZSPj1wSh4J2gLUNM4-xVg&usqp=CAU",
+      description:
+        "Lifestyle is a way used by people, groups and nations and is formed in specific geographical, economic, political, cultural and religious text. Lifestyle is referred to the characteristics of inhabitants of a region in special time and place. It includes day to day behaviors and functions of individuals in job, activities, fun and diet.Sometimes trying to feed your kid might be the toughest challenge of the day. Even if your little ones have just started to talk, it’s normal for them to be fussy eaters. So, it’s you the parents who can help by giving them the freedom when it comes to choosing foods. One easy way to deal the issue is by incorporating new tastes and flavors into your kids’ diets from an early age. This would develop their palates and prevent them from becoming picky eaters. Approximately 25% to 35% of toddlers and preschoolers have been described by their parents as ‘picky’ eaters. Picky eating is characterized by the toddler or child eating a selective food, restricting intake particularly of green vegetables, and moreover being unwilling to try new foods. However, pediatricians and family physicians are often called to help parents and make them learn how to feed children effectively and avoid making mealtimes a daily battleground. ",
+      instructor: {
+        name: "Md Rubel Hasan",
+        profile: "https://placeimg.com/192/192/people",
+        update: "October 20, 2022",
+        star: "5.0",
+      },
+      reviews: [
+        {
+          name: "Eleanor Fant",
+          profile: "https://placeimg.com/192/192/people",
+          comment:
+            "So I said lurgy dropped a clanger Jeffrey bugger cuppa gosh David blatant have it, standard A bit of how's your father my lady absolutely.",
+          date: "July 14, 2022",
+          rating: "4",
+        },
+        {
+          name: "Shahnewaz Sakil",
+          profile: "https://placeimg.com/192/192/people",
+          comment:
+            "David blatant have it, standard A bit of how's your father my lady absolutely.",
+          date: "July 14, 2022",
+          rating: "4",
+        },
+      ],
+    },
+    {
+      _id: "0282ehsdfhujs00065fasdfhsde",
+      name: "Influencer Marketing Strategy",
+      category_id: "05",
+      category_name: "Marketing",
+      rating: {
+        number: 4.4,
+        badge: "Very Good",
+        total: "801",
+      },
+
+      price: "$65",
+      total_view: 300,
+      published_date: "2021-07-22 17:27:34",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtMz-TXof73PLOzZSPj1wSh4J2gLUNM4-xVg&usqp=CAU",
+      description:
+        "Influencer marketing is the practice of engaging internal and industry experts with active networks to help achieve measurable business goals.This course is about strategy. Although there is no all-purpose, one-size-fits-all influencer marketing strategy template, you will learn how to tailor one for a wide variety of B2B, B2C, and nonprofit organizations using the two-step flow model of communication. But this course is also about tactics. I believe, “Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat.” So, you will learn both in this 6-week long course. Your final project for this course is to create a pitch deck for a social media influencer strategy. The purpose of your final project is to give you a concrete artifact that you can use to demonstrate your mastery of new competencies and skills to either the executives in your current organization or to prospective employers.",
+      instructor: {
+        name: "Kamrul Hasan",
+        profile: "https://placeimg.com/192/192/people",
+        update: "January 20, 2022",
+        star: "5.0",
+      },
+      reviews: [
+        {
+          name: "Eleanor Fant",
+          profile: "https://placeimg.com/192/192/people",
+          comment:
+            "So I said lurgy dropped a clanger Jeffrey bugger cuppa gosh David blatant have it, standard A bit of how's your father my lady absolutely.",
+          date: "July 14, 2022",
+          rating: "4",
+        },
+        {
+          name: "Shahnewaz Sakil",
+          profile: "https://placeimg.com/192/192/people",
+          comment:
+            "David blatant have it, standard A bit of how's your father my lady absolutely.",
+          date: "July 14, 2022",
+          rating: "4",
+        },
+      ],
+    },
+    {
+      _id: "0282ehpqwehglqef00065fasdfhsde",
+      name: "Financial Markets and Investment Strategy",
+      category_id: "06",
+      category_name: "Finance",
+      rating: {
+        number: 4.8,
+        badge: "Excellent",
+        total: "186",
+      },
+
+      price: "$55",
+      total_view: 300,
+      published_date: "2022-05-10 17:27:34",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtMz-TXof73PLOzZSPj1wSh4J2gLUNM4-xVg&usqp=CAU",
+      description:
+        "Finance is defined as the management of money and includes activities such as investing, borrowing, lending, budgeting, saving, and forecasting. There are three main types of finance: (1) personal, (2) corporate, and (3) public/government. This guide will unpack the question: what is finance?he easiest way to define finance is by providing examples of the activities it includes. There are many different career paths and jobs that perform a wide range of finance activities. Below is a list of the most common examples: Finance is the study and discipline of money, currency and capital assets. It is related to, but not synonymous with economics, the study of production, distribution, and consumption of money, assets, goods and services (the discipline of financial economics bridges the two). Finance activities take place in financial systems at various scopes, thus the field can be roughly divided into personal, corporate, and public finance. [a] A broad range of subfields within finance exist due to its wide scope. Asset, money, risk and investment management aim to maximize value and minimize volatility. Financial analysis is viability, stability, and profitability assessment of an action or entity. In some cases, theories in finance can be tested using the scientific method, covered by experimental finance.",
+      instructor: {
+        name: "Rabbani Islam",
+        profile: "https://placeimg.com/192/192/people",
+        update: "January 20, 2022",
+        star: "4.9",
+      },
+      reviews: [
+        {
+          name: "Eleanor Fant",
+          profile: "https://placeimg.com/192/192/people",
+          comment:
+            "So I said lurgy dropped a clanger Jeffrey bugger cuppa gosh David blatant have it, standard A bit of how's your father my lady absolutely.",
+          date: "July 14, 2022",
+          rating: "4",
+        },
+        {
+          name: "Shahnewaz Sakil",
+          profile: "https://placeimg.com/192/192/people",
+          comment:
+            "David blatant have it, standard A bit of how's your father my lady absolutely.",
+          date: "July 14, 2022",
+          rating: "4",
+        },
+      ],
+    },
+    {
+      _id: "faag64asg4gas+dwfg+a+fgfhsde",
+      name: "Dialectical Behavioral Therapy: Interpersonal Effectiveness",
+      category_id: "07",
+      category_name: "Health & Fitness",
+      rating: {
+        number: 4.6,
+        badge: "Excellent",
+        total: "170",
+      },
+
+      price: "$39",
+      total_view: 300,
+      published_date: "2022-05-10 17:27:34",
+      img: "https://img-b.udemycdn.com/course/480x270/4851280_505b_3.jpg",
+      description:
+        "What Are The Benefits Of Dialectical Behavioral Therapy (DBT)? DBT or Dialectical Behavior Therapy Improves Your Relationships, Improves Quality Of Life, helps with depression and improves mental health and well-being. This is a course for anyone interested in personal development and improving quality of life with techniques such as Mindfulness, Distress Tolerance, Emotional Regulation and Interpersonal Effectiveness. Dialectical behavior therapy (DBT) is a type of cognitive-behavioral therapy. Its main goals are to teach people how to live fully in the moment, how to develop healthy ways to cope with stress, how to effectively regulate their emotions, and improve their relationships with others. In DBT, individual therapists frequently meet with a consultation team in order to help them cope with the emotional demands of treating their patients.DBT is a very effective treatment for: Attention-deficit/hyperactivity disorder (ADHD)Bipolar disorderEating disorders (such as anorexia nervosa, binge eating disorder, and bulimia nervosa) Generalized anxiety disorder (GAD)Major depressive disorder (including treatment-resistant major depression and chronic depression)Obsessive-compulsive disorder (OCD) Post-traumatic stress disorder (PTSD) Substance use disorder In DBT you will be able to learn strategies to accept and tolerate your life circumstances, emotions, and yourself. You will also develop skills that can help you make positive changes in your behaviors and interactions with others.",
+      instructor: {
+        name: "Aminul Islam Shanto",
+        profile: "https://placeimg.com/192/192/people",
+        update: "January 20, 2022",
+        star: "4.9",
+      },
+      reviews: [
+        {
+          name: "Eleanor Fant",
+          profile: "https://placeimg.com/192/192/people",
+          comment:
+            "So I said lurgy dropped a clanger Jeffrey bugger cuppa gosh David blatant have it, standard A bit of how's your father my lady absolutely.",
+          date: "July 14, 2022",
+          rating: "4",
+        },
+        {
+          name: "Shahnewaz Sakil",
+          profile: "https://placeimg.com/192/192/people",
+          comment:
+            "David blatant have it, standard A bit of how's your father my lady absolutely.",
+          date: "July 14, 2022",
+          rating: "4",
+        },
+      ],
+    },
+    {
+      _id: "fag9654ga9g4we2asdf6564fasd66516dfhsde",
+      name: "Fundamentals of Music Theory",
+      category_id: "08",
+      category_name: "Music",
+      rating: {
+        number: 4.9,
+        badge: "Excellent",
+        total: "120",
+      },
+
+      price: "$25",
+      total_view: 300,
+      published_date: "2022-05-10 17:27:34",
+      img: "https://img-b.udemycdn.com/course/480x270/4851280_505b_3.jpg",
+      description:
+        "This course, revised in 2022, will introduce you to the theory of music, providing you with the skills needed to read and write Western music notation, as well as to understand, analyse, and listen informedly.It will cover material such as pitches and scales, intervals, clefs, rhythm, form, metre and time signatures, phrases and cadences, and basic harmony. This course covers the fundamentals of Western music theory, from the absolute basics to some more advanced concepts. As such, it is the perfect course for beginners and more experienced musicians alike.",
+      instructor: {
+        name: "Dr Thomas Butler",
+        profile: "https://placeimg.com/192/192/people",
+        update: "January 20, 2022",
+        star: "4.9",
+      },
+      reviews: [
+        {
+          name: "Eleanor Fant",
+          profile: "https://placeimg.com/192/192/people",
+          comment:
+            "So I said lurgy dropped a clanger Jeffrey bugger cuppa gosh David blatant have it, standard A bit of how's your father my lady absolutely.",
+          date: "July 14, 2022",
+          rating: "4",
+        },
+        {
+          name: "Shahnewaz Sakil",
+          profile: "https://placeimg.com/192/192/people",
+          comment:
+            "David blatant have it, standard A bit of how's your father my lady absolutely.",
+          date: "July 14, 2022",
+          rating: "4",
+        },
+      ],
+    },
+    {
+      _id: "fag965464fs4d6f9aghhhhh6sdfe",
+      name: "Academic English: Writing Specialization",
+      category_id: "09",
+      category_name: "Academics",
+      rating: {
+        number: 4.9,
+        badge: "Excellent",
+        total: "120",
+      },
+
+      price: "$25",
+      total_view: 300,
+      published_date: "2022-05-10 17:27:34",
+      img: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d396qusza40orc.cloudfront.net/phoenixassets/academic-english-s12n/academic-english%20%281%29.jpg?auto=format%2Ccompress&dpr=1&w=330&h=330&fit=fill&q=25",
+      description:
+        "The skills taught in this Specialization will empower you to succeed in any college-level course or professional field. You’ll learn to conduct rigorous academic research and to express your ideas clearly in an academic format. In the final Capstone Project, all the knowledge that you’ve gained over the span of these courses will culminate into an academic research paper on an issue of your choice. This specialization covers the listening and speaking skills that non-native English-speaking students need to be successful in English-speaking colleges and universities. Native English-speaking students who would like to increase their chances of success in university courses will also benefit as well anyone interested in improving their listening comprehension skills. You will learn how to listen to class lectures and take notes more effectively. You will also improve your speaking skills for common tasks such as class discussions and presentations. In the capstone, you will create a video presentation on an academic topic. ",
+      instructor: {
+        name: "Dr Thomas Butler",
+        profile: "https://placeimg.com/192/192/people",
+        update: "January 20, 2022",
+        star: "4.9",
       },
       reviews: [
         {
@@ -174,10 +426,8 @@ const CourseDetails = () => {
     ],
   };
   const options = {
-    format: 'a2',
-    page:3
-    // unit: 'in',
-    // format: [4,2]
+    format: 'a1',
+    
 };
 
   return (
@@ -188,7 +438,7 @@ const CourseDetails = () => {
         <h1 className="text-3xl font-semibold text-primary">{course.name}</h1>
         <div>
           
-        <ReactToPdf  targetRef={ref} filename={`${course.name}.pdf`} options={options}>
+        <ReactToPdf x={150} y={20}targetRef={ref} filename={`${course.name}.pdf`} options={options}>
         {({ toPdf, targetRef }) => (
           <button onClick={toPdf}
           ref={targetRef} className="btn btn-outline mr-4 btn-primary btn-sm font-bold shadow-md">

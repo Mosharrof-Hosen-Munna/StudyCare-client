@@ -6,6 +6,8 @@ const Register = () => {
   const [registerData, setRegisterData] = useState({});
   const [error, setError] = useState({});
 
+  console.log(error);
+
   const {
     handleGoogleSignIn,
     handleEmailPasswordRegister,
@@ -13,7 +15,7 @@ const Register = () => {
     setUserName,
     setLoading,
     user,
-    handleGithubSignIn
+    handleGithubSignIn,
   } = useAuth();
 
   const location = useLocation();
@@ -91,23 +93,22 @@ const Register = () => {
       .finally(() => setLoading(false));
   };
 
-
   return (
     <div>
-      
-        <div className="hero min-h-screen bg-base-100">
-          <div className="hero-content flex-col lg:flex-row-reverse">
-            <div className="text-center lg:text-left">
-              <h1 className="text-5xl font-bold">Register now!</h1>
-              <p className="py-6">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
-              </p>
-            </div>
-            <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-              <div className="card-body">
+      <div className="hero min-h-screen bg-base-100">
+        <div className="hero-content flex-col lg:flex-row-reverse">
+          <div className="text-center lg:text-left lg:ml-8">
+            <h1 className="text-5xl font-bold">Register now!</h1>
+            <p className="py-6">
+              Study Care provide you a better quality and advanced courses about
+              indivitual topics
+            </p>
+          </div>
+          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+            <div className="card-body">
               <form onSubmit={handleEmailRegistration}>
+                <h1 className="text-3xl font-bold text-center mb-4">Register</h1>
+               
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">Name</span>
@@ -119,6 +120,7 @@ const Register = () => {
                     placeholder="name"
                     className="input input-bordered"
                   />
+                  <div style={{color: 'red'}} className=" text-sm mt-1">{error.name&&error.name}</div>
                 </div>
                 <div className="form-control">
                   <label className="label">
@@ -131,6 +133,7 @@ const Register = () => {
                     placeholder="email"
                     className="input input-bordered"
                   />
+                  <div style={{color: 'red'}} className=" text-sm mt-1">{error.email&&error.email}</div>
                 </div>
                 <div className="form-control">
                   <label className="label">
@@ -143,6 +146,7 @@ const Register = () => {
                     placeholder="password"
                     className="input input-bordered"
                   />
+                  <div style={{color: 'red'}} className=" text-sm mt-1">{error.password && error.password}</div>
                 </div>
                 <div className="form-control mt-6">
                   <button type="submit" className="btn btn-primary">
@@ -151,29 +155,30 @@ const Register = () => {
                 </div>
                 <label className="label block text-center">
                   <Link
-                    href="/login"
+                    to="/login"
                     className="label-text-alt text-center link link-hover"
                   >
                     Already have an account? Please login here
                   </Link>
                 </label>
-                
-                </form>
-                <div className="form-control mt-2">
-                  <button onClick={signInGoogle} className="btn shadow-md btn-ghost">
-                    Register with Google
-                  </button>
-                </div>
-                <div className="form-control mt-2">
-                  <button onClick={signInGithub} className="btn shadow-md ">
-                    Register with Github
-                  </button>
-                </div>
+              </form>
+              <div className="form-control mt-2">
+                <button
+                  onClick={signInGoogle}
+                  className="btn shadow-md btn-ghost"
+                >
+                  Register with Google
+                </button>
+              </div>
+              <div className="form-control mt-2">
+                <button onClick={signInGithub} className="btn shadow-md ">
+                  Register with Github
+                </button>
               </div>
             </div>
           </div>
         </div>
-      
+      </div>
     </div>
   );
 };

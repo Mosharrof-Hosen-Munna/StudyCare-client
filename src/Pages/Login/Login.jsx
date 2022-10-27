@@ -26,15 +26,17 @@ const Login = () => {
   const handleEmailLogin = (e) => {
     setLoading(true);
     e.preventDefault();
-    handleEmailPasswordLogin(loginData?.email, loginData?.password)
-      .then((result) => {
-        navigate(from, { replace: true });
-      })
-      .catch((e) => {
-        console.log(e);
-        setError("Email or password wrong!");
-      })
-      .finally(() => setLoading(false));
+   if(loginData.email&&loginData.password){
+    handleEmailPasswordLogin(loginData.email, loginData.password)
+    .then((result) => {
+      navigate(from, { replace: true });
+    })
+    .catch((e) => {
+      console.log(e);
+      setError("Email or password wrong!");
+    })
+    .finally(() => setLoading(false));
+   }
   };
 
   const signInGoogle = () => {
@@ -60,17 +62,36 @@ const Login = () => {
     <div>
       <div className="hero min-h-screen bg-base-100">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="text-center lg:text-left ml-8">
+          <div className="text-center lg:text-left lg:ml-8">
             <h1 className="text-5xl font-bold">Login your account now!</h1>
             <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+            Study Care provide you a better quality and advanced courses about indivitual topics
             </p>
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <div className="card-body">
               <form onSubmit={handleEmailLogin}>
+              <h1 className="text-3xl font-bold text-center mb-4">Login</h1>
+              {/* show error */}
+              {error&&<div className="alert alert-error shadow-lg">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="stroke-current flex-shrink-0 h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <span>{error}</span>
+                  </div>
+                </div>}
+                {/* end show alert */}
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">Email</span>
@@ -107,7 +128,7 @@ const Login = () => {
                 </div>
                 <label className="label block text-center">
                   <Link
-                    href="/register"
+                    to="/register"
                     className="label-text-alt text-center link link-hover"
                   >
                     Haven't any account? Please Register.
