@@ -1,10 +1,12 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
+import { FaBusinessTime } from "@react-icons/all-files/fa/F";
 
 const Navigation = () => {
+  const [check,setCheck] = useState(false)
   const { user, logOut } = useAuth();
-  // console.log(user.providerData[0].photoURL);
   return (
     <div className="bg-violet-700 text-white sticky top-0 z-50">
       <div className="navbar container mx-auto">
@@ -14,7 +16,7 @@ const Navigation = () => {
           </Link>
         </div>
         <div className="flex-none">
-          <ul className="menu menu-horizontal p-0 flex items-center">
+          <ul className="menu menu-horizontal p-0 flex items-center text-lg">
             <li>
               <Link to="/home">Home</Link>
             </li>
@@ -23,6 +25,19 @@ const Navigation = () => {
             </li>
             <li>
               <Link to="/blog">Blog</Link>
+            </li>
+            <li>
+              <div className="form-control">
+                <label className="label cursor-pointer">
+                  <span className="label-text text-white text-lg mr-2">Dark Mode</span>
+                  <input
+                    type="checkbox"
+                    className="toggle toggle-secondary"
+                    checked={check}
+                    onChange={()=>setCheck(!check)}
+                  />
+                </label>
+              </div>
             </li>
             {!user && (
               <>
@@ -39,24 +54,23 @@ const Navigation = () => {
                 <li onClick={logOut}>
                   <a>Logout</a>
                 </li>
-                
-                  <div
-                    className="tooltip  tooltip-bottom"
-                    data-tip={user.displayName}
-                  >
-                    <div className="avatar ml-4">
-                      <div className="w-10 rounded-full">
-                        <img
-                          src={
-                            user.photoURL
-                              ? user.photoURL
-                              : `https://placeimg.com/192/192/people`
-                          }
-                        />
-                      </div>
+
+                <div
+                  className="tooltip  tooltip-bottom"
+                  data-tip={user.displayName}
+                >
+                  <div className="avatar ml-4">
+                    <div className="w-10 rounded-full cursor-pointer">
+                      <img
+                        src={
+                          user.photoURL
+                            ? user.photoURL
+                            : `https://placeimg.com/192/192/people`
+                        }
+                      />
                     </div>
                   </div>
-               
+                </div>
               </>
             )}
           </ul>

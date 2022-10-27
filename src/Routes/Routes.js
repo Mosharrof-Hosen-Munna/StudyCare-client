@@ -24,7 +24,7 @@ const routes = createBrowserRouter([
       },
       {
         path:'/courses',
-        element: <PrivateRoute><CoursesLayout/></PrivateRoute>,
+        element: <CoursesLayout/>,
         children:[
           {
             path:'/courses',
@@ -36,7 +36,7 @@ const routes = createBrowserRouter([
           },
           {
             path:'/courses/checkout/:courseId',
-            element: <CheckOut/>
+            element: <PrivateRoute><CheckOut/></PrivateRoute>
           },
         ]
       },
