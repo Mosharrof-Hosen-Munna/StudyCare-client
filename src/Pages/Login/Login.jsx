@@ -24,8 +24,14 @@ const Login = () => {
     setLoginData(newLoginData);
   };
   const handleEmailLogin = (e) => {
-    setLoading(true);
     e.preventDefault();
+
+    if(!loginData.email || !loginData.password){
+      setError('Please provide all information!')
+      return
+    }
+
+    setLoading(true);
    if(loginData.email&&loginData.password){
     handleEmailPasswordLogin(loginData.email, loginData.password)
     .then((result) => {
